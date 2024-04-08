@@ -1,0 +1,156 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+
+.wrap{
+	width: 1024px;
+	margin: 0 auto;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+	
+}
+.header h1 a{
+	background-image: url(../imgs/solo.png);
+	width: 284px;
+	height: 281px;
+	display: block;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+
+}
+.link{
+	display: flex;
+}
+.link li a{
+	display: block;
+	padding: 50px 50px 0px 50px;
+	text-decoration: none;
+	color: #000;
+	font-size: 20px;
+	border-bottom: 3px solid transparent
+}
+.link li a:hover,.link a.active{
+	color: #4169e1;
+	border-bottom: solid #4169e1;
+}
+.link ul{
+	display: none;
+}
+
+
+.swiper{
+	width: 100%;
+	margin-bottom: 30px;
+}
+.role-content h2{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.role-content ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: end;
+	align-items: center;
+	border: 1px solid gray;
+	padding: 20px;
+}
+.role-content ul li{
+	padding-bottom: 20px;
+}
+.role-content p{
+	width: 300px;
+	text-align: center;
+	line-height: 24px;
+	font-weight: bold;
+}
+.voting-form h2{
+	text-align: center;
+	padding: 30px;
+	font-size: 30px;
+	font-weight: bold;
+}
+.voting-form-flex{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 30px;
+}
+.voting-form-flex h3{
+	font-size: 24px;
+}
+.voting-form-flex select{
+	font-size: 20px;
+}
+.contact ul{
+	display: flex;
+	justify-content: center;
+	border-top: 1px solid gray;
+	padding-top: 30px;
+}
+.contact li a{
+	text-decoration: none;
+	font-size: 30px;
+	padding: 30px;
+	color: pink;
+}
+#gotop{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	display: none;
+}
